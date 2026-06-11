@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajeevan Reddy Chittepu | Backend & GenAI Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Rajeevan<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-btn">Get In Touch</a>
+            </nav>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-btn">Get In Touch</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Open to New Opportunities</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Rajeevan Reddy</span>
+                </h1>
+                <h2 class="hero-subtitle">Backend & Generative AI Engineer</h2>
+                <p class="hero-description">
+                    I build high-performance, containerized backend services, microservices APIs, and stateful multi-agent AI systems. Combining Data Science with a Minor in Finance & Economics from IIT Madras to bridge technical architecture and business domain logic.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/21f3002599" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/rajeevan-reddy" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:rajeevan.chittepu@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Bridging Systems & Data Science</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card card-glow">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Backend & APIs</h3>
+                    <p>Proficient in Python and FastAPI, building low-latency RESTful APIs, data validation using Pydantic, and automated migrations using SQLAlchemy and Alembic.</p>
+                </div>
+                <div class="about-card card-glow">
+                    <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Agentic AI & RAG</h3>
+                    <p>Hands-on production experience designing stateful multi-agent pipelines (LangGraph/LangChain) and Retrieval-Augmented Generation services with Qdrant and Pinecone.</p>
+                </div>
+                <div class="about-card card-glow">
+                    <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Infrastructure & Queues</h3>
+                    <p>Experienced in containerizing workloads using Docker and orchestration queues (Celery/Redis, SQS/DynamoDB) to run non-blocking background workers.</p>
+                </div>
+                <div class="about-card card-glow">
+                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Finance & Economics</h3>
+                    <p>Leveraging a minor in Finance & Economics from IIT Madras to build business-critical backend applications like transactional ledgers, e-commerce, and ERP systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section-padding" id="experience">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Professional Path</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb 2026 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="role-title">Backend & GenAI Engineer Intern</h3>
+                        <h4 class="company-name">vSynergize <span class="badge-inline">Remote</span></h4>
+                        <ul class="timeline-bullets">
+                            <li>Designed and optimized multi-tenant, low-latency API architectures in Python/FastAPI, utilizing <strong>PostgreSQL JSONB</strong> to manage session caches and LLM token usage.</li>
+                            <li>Engineered asynchronous, bulk document-ingestion pipelines using <strong>AWS SQS</strong>, Lambda, and <strong>DynamoDB distributed locks</strong> to guarantee transactional safety.</li>
+                            <li>Designed stateful multi-agent workflows on AWS Bedrock using <strong>LangGraph</strong> and function-calling patterns for data extraction.</li>
+                            <li>Re-architected core REST endpoints to support <strong>Server-Sent Events (SSE) streaming</strong>, achieving a <strong>91% drop in perceived latency</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2026 (Expected)</div>
+                    <div class="timeline-content">
+                        <h3 class="role-title">Bachelor of Science in Data Science & Applications</h3>
+                        <h4 class="company-name">Indian Institute of Technology (IIT) Madras</h4>
+                        <p class="education-text">
+                            Specializing in systems software and financial data analysis. Completed core coursework in Database Management Systems (DBMS), Cloud Computing, Software Testing, Deep Learning, and an academic <strong>Minor in Finance & Economics</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section-padding" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <!-- Project Category Filter -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="genai">GenAI & Agents</button>
+                <button class="filter-btn" data-filter="backend">Backend & System</button>
+                <button class="filter-btn" data-filter="ml">Data Science & ML</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card" data-category="genai">
+                    <div class="project-meta">
+                        <span class="project-tag-sm">GenAI</span>
+                        <span class="project-date">2026</span>
+                    </div>
+                    <h3>AI Faculty Platform & Streaming RAG</h3>
+                    <p>Optimized tutoring system delivering dynamic content generation (flashcards, quiz Q&As, 3D models) with Server-Sent Events (SSE) streaming and AWS queue ingestion.</p>
+                    <div class="tech-badges">
+                        <span>FastAPI</span>
+                        <span>Qdrant</span>
+                        <span>PostgreSQL</span>
+                        <span>AWS SQS</span>
+                    </div>
+                    <a href="https://github.com/21f3002599/ai-faculty-be" target="_blank" class="project-link">View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="genai">
+                    <div class="project-meta">
+                        <span class="project-tag-sm">Agents</span>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <h3>AI Job Hunter Platform</h3>
+                    <p>An autonomous agentic workflow crawling job boards (Lever, Ashby) via headless Playwright, performing semantic match-ranking via PostgreSQL pgvector, and generating resumes asynchronously.</p>
+                    <div class="tech-badges">
+                        <span>FastAPI</span>
+                        <span>Celery</span>
+                        <span>Redis</span>
+                        <span>pgvector</span>
+                        <span>Playwright</span>
+                    </div>
+                    <a href="https://github.com/21f3002599/ai-job-hunter" target="_blank" class="project-link">View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-meta">
+                        <span class="project-tag-sm">Fintech</span>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <h3>Gen AI Banking & KYC System</h3>
+                    <p>A conversational banking platform featuring OCR-based KYC parsing, real-time machine learning transaction fraud-detection (Scikit-Learn), and secure FastAPI endpoints.</p>
+                    <div class="tech-badges">
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>Supabase</span>
+                        <span>Gemini API</span>
+                        <span>Pytest</span>
+                    </div>
+                    <a href="https://github.com/21f3002599/gen-ai-banking" target="_blank" class="project-link">View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-meta">
+                        <span class="project-tag-sm">Deep Learning</span>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <h3>Multilingual Sentiment Analysis</h3>
+                    <p>Finetuned Google’s Gemma 3 1B LLM for sentiment classification across 13 Indian languages. Implemented LoRA (PEFT) and 4-bit quantization to optimize training parameters.</p>
+                    <div class="tech-badges">
+                        <span>Gemma 3</span>
+                        <span>PEFT / LoRA</span>
+                        <span>PyTorch</span>
+                        <span>HuggingFace</span>
+                    </div>
+                    <a href="https://github.com/21f3002599/gemma-sentiment-analysis" target="_blank" class="project-link">View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-meta">
+                        <span class="project-tag-sm">Kaggle</span>
+                        <span class="project-date">2024</span>
+                    </div>
+                    <h3>Customer Lifetime Value Predictor</h3>
+                    <p>Developed a LightGBM regression pipeline on 50+ categorical/numerical features of clickstream behavior, tuning hyperparameters via Optuna's Bayesian search.</p>
+                    <div class="tech-badges">
+                        <span>LightGBM</span>
+                        <span>Optuna</span>
+                        <span>Scikit-Learn</span>
+                        <span>Pandas</span>
+                    </div>
+                    <a href="https://github.com/21f3002599/engage2value" target="_blank" class="project-link">View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-meta">
+                        <span class="project-tag-sm">Fullstack</span>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <h3>Vehicle Parking Dashboard (V2)</h3>
+                    <p>A multi-user occupancy tracking platform featuring an administration dashboard built with Vue.js, showing real-time slot statuses and check-in history charts.</p>
+                    <div class="tech-badges">
+                        <span>Vue.js</span>
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Chart.js</span>
+                        <span>SQLite</span>
+                    </div>
+                    <a href="https://github.com/21f3002599/Vehicle_Parking_App-V2" target="_blank" class="project-link">View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section-padding" id="skills">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            <div class="skills-container">
+                
+                <div class="skills-category">
+                    <h3>Languages & Backend</h3>
+                    <div class="skills-badges-list">
+                        <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL</span>
+                        <span class="skill-badge"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                        <span class="skill-badge"><i class="fa-solid fa-pepper-hot"></i> Flask</span>
+                        <span class="skill-badge"><i class="fa-solid fa-diagram-project"></i> RESTful APIs</span>
+                        <span class="skill-badge">SQLAlchemy / Alembic</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Databases & Caching</h3>
+                    <div class="skills-badges-list">
+                        <span class="skill-badge">PostgreSQL (JSONB)</span>
+                        <span class="skill-badge">pgvector</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Qdrant Vector DB</span>
+                        <span class="skill-badge">Redis</span>
+                        <span class="skill-badge">DynamoDB</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>GenAI, ML & MLOps</h3>
+                    <div class="skills-badges-list">
+                        <span class="skill-badge">LangGraph / LangChain</span>
+                        <span class="skill-badge">RAG Architecture</span>
+                        <span class="skill-badge">Model Fine-Tuning (PEFT/LoRA)</span>
+                        <span class="skill-badge">Hugging Face Transformers</span>
+                        <span class="skill-badge">Scikit-Learn / LightGBM</span>
+                        <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker / Compose</span>
+                        <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS Cloud Services</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-text">
+                    I am actively seeking full-time opportunities or technical collaborations in Backend Development and Applied Generative AI. Whether you want to discuss a project, query my work experience, or just say hello, my inbox is open!
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:rajeevan.chittepu@gmail.com">rajeevan.chittepu@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+917013603684">+91 7013603684</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Hyderabad, India (Open to Relocation / Remote)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Interface -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" required placeholder="Hi Rajeevan, I'd love to chat about..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg">
+        <div class="container footer-container">
+            <p>&copy; 2026 Rajeevan Reddy Chittepu. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/21f3002599" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/rajeevan-reddy" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:rajeevan.chittepu@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
